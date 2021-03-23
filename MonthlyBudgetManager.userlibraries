@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="sqlite-jdbc-3.30.1">
+    <archive path="/Users/yutauchida/Downloads/sqlite-jdbc-3.30.1.jar" />
+  </library>
+  <library name="javafx14">
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx-swt.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.base.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.controls.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.fxml.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.graphics.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.media.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.swing.jar" />
+    <archive path="/Users/yutauchida/lib/javafx-sdk-14/lib/javafx.web.jar" />
+  </library>
+</eclipse-userlibraries>
+
