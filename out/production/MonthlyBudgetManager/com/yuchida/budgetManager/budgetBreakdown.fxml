@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.yuchida.budgetManager.BudgetBreakdownController"
+            prefHeight="500.0" prefWidth="825.0" fx:id="dialogPane" stylesheets="@breakDownItemDialog.css">
+    <content>
+        <BorderPane  fx:id="mainBorderPane">
+            <top>
+                <ToolBar>
+                    <HBox >
+                        <Label text="item name "></Label>
+                        <TextField promptText="e.g. grocery, snacks, date," fx:id="newItemTextField"/>
+                        <Button text="Add.."  onAction="#addItem"/>
+
+                        <Region HBox.hgrow="ALWAYS" maxWidth="-Infinity">
+                        </Region>
+
+                        <Button text="OK" id="OK" onAction="#handleOK" />
+
+                    </HBox>
+                </ToolBar>
+            </top>
+            <left>
+
+                <VBox id="left__vbox">
+                    <HBox id="total-amount__hbox">
+                        <Label text="You spent: "/>
+                        <Text fx:id="totalAmount" text="0" styleClass="totalAmount"/>
+                        <padding>
+                            <Insets topRightBottomLeft="10" />
+                        </padding>
+                    </HBox>
+
+                    <VBox fx:id="breakDownItemBox" styleClass="breakdownItemBox">
+
+                    </VBox>
+
+                </VBox>
+            </left>
+            <center>
+                <HBox>
+                    <Pane fx:id="chartPane" styleClass="chartPane"></Pane>
+                </HBox>
+            </center>
+
+        </BorderPane>
+    </content>
+
+
+
+</DialogPane>

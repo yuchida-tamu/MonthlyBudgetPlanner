@@ -1,0 +1,82 @@
+
+#dialogPane {
+    -fx-padding: 0;
+}
+
+#mainBorderPane {
+    -fx-padding: 0;
+
+}
+
+#OK {
+    -fx-float: right;
+}
+
+#total-amount__hbox{
+    -fx-font-size: 20px;
+    -fx-padding: 0 0 15px 10px;
+    -fx-alignment: center;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-style: solid;
+    -fx-border-color: gray;
+}
+#total-amount__hbox .label{
+
+     -fx-text-fill: darkslategrey;
+}
+
+#left__vbox{
+    /*
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    */
+    -fx-pref-width: 300px;
+    -fx-pref-height: 100%;
+    -fx-min-height: 100%;
+
+    -fx-padding: 10px 0 0 20px;
+}
+
+#left__vbox .text-field{
+    -fx-pref-width: 100px;
+
+    -fx-border-style:solid;
+    -fx-border-width:1px;
+    -fx-border-color: #a9a9a9;
+
+
+}
+
+#titleBox{
+
+}
+
+HBox {
+    -fx-alignment: center-left;
+    -fx-padding: 0 10 0 20px;
+}
+
+.breakdownItemBox {
+
+    -fx-spacing: 10px;
+}
+
+.breakdownItemBox .hbox {
+    -fx-padding: 20px 0 0 20px;
+    -fx-spacing: 5px;
+}
+
+.itemTextField{
+    -fx-padding: 5px;
+   -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.itemLabel {
+    -fx-font-size: 15px;
+}
+
+
+.chartPane {
+
+}

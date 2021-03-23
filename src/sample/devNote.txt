@@ -1,0 +1,24 @@
+Done Todo: add a new Class: BreakdownItem - which stores data of breakdown of an expense. MonthlyBudget can have multiple BreakdownItems
+
+    User can create edit it and create a new BreakdownItem at their will
+    BreakdownItem has  :name, :amount(amount spent)
+    BreakdownItem does: take an input(amount an user has spent), and add it to :amount
+
+Bug:
+    NullPointer
+        When load data, and try to open a breakdown detail panel
+        I suspect that when the app load data, it seems that Piedata list is not updated or created
+        - need to recreate or update Piedata
+
+
+Idea:
+    - I want the app to show monthly income so that an user can compare with badget plan
+        - How does it display the info? is it too many text to display? - potentially, merge some info to reduce the
+            crowdedness
+
+        - if it has the income section, it would be nice if I can allocate percentage to each expense, and the app
+            automatically calculate each appropriate amount of expense for the income - total is always the same as the income amount
+            - an user should be able to switch between manually type in info or auto calculate by assigning proportion.
+
+
+

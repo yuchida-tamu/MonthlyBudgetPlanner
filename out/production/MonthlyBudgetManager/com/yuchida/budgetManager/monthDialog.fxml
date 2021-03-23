@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<DialogPane fx:id="editDialog"
+        xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.yuchida.budgetManager.MonthDialogController"
+            prefHeight="400.0" prefWidth="600.0">
+    <headerText>
+        Set Monthly Budget Plan
+    </headerText>
+    <content>
+        <VBox>
+            <Label text="Food: "/>
+            <TextField fx:id="foodField" onKeyReleased="#updateTotal"/>
+            <Label text="Utilities: "/>
+            <TextField fx:id="utilitiesField" onKeyReleased="#updateTotal" />
+            <Label text="Education: "/>
+            <TextField fx:id="educationField" onKeyReleased="#updateTotal"/>
+            <Label text="Entertainment: "/>
+            <TextField fx:id="entertainmentField" onKeyReleased="#updateTotal"/>
+            <Label text="Miscellaneous: "/>
+            <TextField fx:id="miscellaneousField" onKeyReleased="#updateTotal"/>
+            <Label text="Saving: "/>
+            <TextField fx:id="savingField" onKeyReleased="#updateTotal"/>
+
+            <HBox>
+                <Text fx:id="total" text="This month's budget: "/>
+            </HBox>
+        </VBox>
+
+    </content>
+
+</DialogPane>
